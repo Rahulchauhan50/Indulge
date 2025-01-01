@@ -23,14 +23,15 @@ function App() {
 
   return (
     <Router>
-      <div>
+     
         <Sidebar mobileMenuOpen={mobileMenuOpen} setMobileMenuOpenfn={setMobileMenuOpenfn} />
         <Header mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpenfn} />
         <Routes>
           <Route path="/" element={<Home />} />
+          {/* <Route path="/cart" element={<Home />} /> */}
           <Route path="/cart" element={<Cart />} />
         </Routes>
-      </div>
+      
       <Footer/>
     </Router>
   );

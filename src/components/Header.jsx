@@ -18,9 +18,9 @@ function classNames(...classes) {
 
 function Header({ mobileMenuOpen, setMobileMenuOpen }) {
     return (
-        <div >
+        
             <header>
-                <nav className="fixed top-0 z-[100] w-screen bg-[#1A1A23]  px-4 lg:px-6 py-2.5 h-[100px] md:h-[192px] pb-4 md:pb-8 border-b-[6px] border-[#C4963D]">
+                <nav className="fixed top-0 z-[100] w-screen bg-[#1A1A23]  px-4 lg:px-6 py-2.5 h-[100px] md:h-[162px] pb-4 md:pb-8 border-b-[6px] border-[#C4963D]">
                     <div className="flex h-full flex-wrap justify-between items-center md:items-end mx-auto max-w-screen-xl">
                         <div className=' lg:flex hidden items-end'>
                             <div> <div className='flex justify-center items-center'>
@@ -36,11 +36,11 @@ function Header({ mobileMenuOpen, setMobileMenuOpen }) {
                         </div>
 
                         <Link to='/'>
-                            <img className='w-[80px] md:w-auto' src={logo} alt="" />
+                            <img className='w-[80px] md:w-[140px]' src={logo} alt="" />
                         </Link>
                         {mobileMenuOpen ? (<RiCloseLine onClick={() => setMobileMenuOpen(false)} className='w-6 h-6 md:hidden text-white mr-2' />) : (<HiOutlineMenu onClick={() => setMobileMenuOpen(true)} className='w-6 h-6 md:hidden text-white mr-2' />)}
 
-                        <div className='lg:flex hidden flex-row justify-center items-end gap-4'>
+                        <div className='lg:flex hidden flex-row justify-center items-end gap-4 '>
 
 
 
@@ -74,7 +74,7 @@ function Header({ mobileMenuOpen, setMobileMenuOpen }) {
                                         leaveFrom="transform opacity-100 scale-100"
                                         leaveTo="transform opacity-0 scale-95"
                                     >
-                                        <Menu.Items className="absolute px-4 right-0 z-10 w-[612px] mt-[34px] bg-[#1A1A23] py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                        <Menu.Items className="rounded-br-3xl rounded-bl-3xl absolute px-4 right-0 z-10 w-[612px] mt-[34px] bg-[#1A1A23] py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                                             <Menu.Item>
                                                 {({ active }) => (
                                                     <Link
@@ -180,7 +180,7 @@ function Header({ mobileMenuOpen, setMobileMenuOpen }) {
                                                                 </div>
 
                                                             </div>
-                                                            <div className='justify-end flex my-12'>
+                                                            <div className='justify-end flex mt-12 '>
                                                             <button type="button" class="focus:outline-none text-white bg-[#D39F3A] hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-normal rounded-lg text-[24px] px-12 py-5 mb-2 dark:focus:ring-yellow-900">Checkout</button>
 
                                                             </div>
@@ -206,7 +206,7 @@ function Header({ mobileMenuOpen, setMobileMenuOpen }) {
                     </div>
                 </nav>
             </header>
-        </div>
+       
     )
 }
 

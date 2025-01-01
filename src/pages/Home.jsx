@@ -4,7 +4,7 @@ import Product_slide from '../components/Product_slide'
 
 function Home() {
   return (
-    <div className='mt-[192px] '>
+    <div className='mt-[162px] '>
     <Slider/>
     
     <Product_slide/>
