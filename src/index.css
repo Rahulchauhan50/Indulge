@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-custom-image {
+    background-image: url('/src/assets/watch.webp');
+    background-size: cover;
+    background-position: center;
+  }
+
+.bg-custom-image2 {
+    background-image: url('/src/assets/slide2.webp');
+    background-size: cover;
+    background-position: center;
+  }
+.bg-custom-image3 {
+    background-image: url('/src/assets/slide3.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+.bg-product {
+    background-image: url('/src/assets/product.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  h1, h2, h3, h4, h5, h6, div {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  p, li, span {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .slick-slide > div{
+    margin: 0 16px;
+  }

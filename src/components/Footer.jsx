@@ -1,12 +1,11 @@
 import React from 'react'
 import logo from '../assets/logo.svg'
 import x from '../assets/x.svg'
-import { Dropdown } from "flowbite-react";
 
 
 function Footer() {
     return (
-        <div className='bg-black flex flex-col justify-center py-2'>
+        <div className='bg-black flex flex-col justify-center pt-16'>
             <div className='border-t border-b border-[#C4963D] w-full justify-center flex py-4'>
                 <p className='font-normal text-[27px] text-white leading-10'>Back to top</p>
             </div>

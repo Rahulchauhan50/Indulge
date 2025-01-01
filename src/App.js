@@ -6,6 +6,8 @@ import { useState } from 'react';
 import Home from './pages/Home';
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
+import Slider from './pages/Home';
+import Cart from './pages/Cart';
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -26,6 +28,7 @@ function App() {
         <Header mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpenfn} />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </div>
       <Footer/>

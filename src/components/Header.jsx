@@ -35,9 +35,9 @@ function Header({ mobileMenuOpen, setMobileMenuOpen }) {
                             </div>
                         </div>
 
-                        <div>
+                        <Link to='/'>
                             <img className='w-[80px] md:w-auto' src={logo} alt="" />
-                        </div>
+                        </Link>
                         {mobileMenuOpen ? (<RiCloseLine onClick={() => setMobileMenuOpen(false)} className='w-6 h-6 md:hidden text-white mr-2' />) : (<HiOutlineMenu onClick={() => setMobileMenuOpen(true)} className='w-6 h-6 md:hidden text-white mr-2' />)}
 
                         <div className='lg:flex hidden flex-row justify-center items-end gap-4'>
@@ -165,7 +165,7 @@ function Header({ mobileMenuOpen, setMobileMenuOpen }) {
 
                                             <Menu.Item>
                                                 {({ active }) => (
-                                                    <Link
+                                                    <div
                                                         to='/profile'
                                                         className={classNames(active ? '' : '', 'block px-4 py-2 text-sm text-gray-700')}
                                                     >
@@ -176,7 +176,7 @@ function Header({ mobileMenuOpen, setMobileMenuOpen }) {
                                                                 </div>
                                                                 <div className='justify-center'>
                                                                     <p className='text-white text-[24px] leading-7 font-[700]'>₹30,00,00</p>
-                                                                    <p className='text-white text-[20px] leading-7 font-[400] text-center py-4 border-b border-[#D39F3A]'>View Bag</p>
+                                                                    <Link to='/cart' className='text-white text-[20px] leading-7 font-[400] text-center py-4 border-b border-[#D39F3A]'>View Bag</Link>
                                                                 </div>
 
                                                             </div>
@@ -186,7 +186,7 @@ function Header({ mobileMenuOpen, setMobileMenuOpen }) {
                                                             </div>
 
                                                         </div>
-                                                    </Link>
+                                                    </div>
                                                 )}
                                             </Menu.Item>
                                         </Menu.Items>
